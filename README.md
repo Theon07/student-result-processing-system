@@ -2,7 +2,7 @@
 
 A C-based application designed for the **Processing Student Results**. The system processes student academic records from an input file, performs data validation, and generates a performance report with statistical analysis.
 
-## 📊 Performance Standards
+## Performance Standards
 The system evaluates students based on the following criteria:
 * **Subject Composition**: Each of the 5 subjects consists of a Minor (40 Marks) and a Major (60 Marks) component.
 * **Passing Requirement**: The minimum passing mark in each subject is 50%.
@@ -16,7 +16,7 @@ The system evaluates students based on the following criteria:
     * **D**: 50 - 55 
     * **F**: $< 50$ 
 
-## 🛠️ Project Architecture
+## Project Architecture
 The project is implemented using **modular programming** with the following components:
 
 * `main.c`: Orchestrates the program flow.
@@ -27,7 +27,7 @@ The project is implemented using **modular programming** with the following comp
 * `display.c/h`: Handles formatted tabular output.
 * `constants.h`: Centralized definitions for boundaries and limits.
 
-## 📝 Input Format
+## Input Format
 The system reads data from a file where each record is on a single line. **Names containing spaces must be enclosed in double quotes.**
 
 **Format:**
@@ -40,8 +40,10 @@ The system reads data from a file where each record is on a single line. **Names
 * **IDs**: Must be unique and alphanumeric; special characters are rejected.
 * **Names**: Must contain only alphabets; digits or symbols are rejected.
 * **Marks**: Must be within the range [0, 100].
+    * **Minor Marks**: within range [0. 40] 
+    * **Major Marks**: within range [0. 60] 
 
-## 🚀 Execution
+## Execution
 1. **Compile**: Use the `Makefile` to build the project:
    ```bash
    make
